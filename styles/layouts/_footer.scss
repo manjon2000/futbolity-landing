@@ -1,0 +1,22 @@
+@use "../settings/var" as colors;
+
+.footer {
+    width: 100%;
+    padding: 1rem;
+    background-color: colors.$blue-primary;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &-text {
+        color: #FFF;
+
+        &--gold {
+            color: colors.$gold-light;
+        }
+    }
+}

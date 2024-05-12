@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import './settings/settings';
+@import './layouts/layouts';
+@import './pages/pages';
+@import './components/components';
+
+
+h1,h2,h3,h4,h5,h6,button {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+}
+
+p, span, a {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}

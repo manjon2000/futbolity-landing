@@ -1,0 +1,19 @@
+:root {
+    --blue-primary: #07305D;
+    --blue-dark:    #142F5A;
+    --blue-light:   #17315B;
+    --gold-deep:    #C19336;
+    --gold-dark:    #B7832F;
+    --gold-light:   #D1AC53;
+}
+
+$blue-primary:   var(--blue-primary);
+$blue-dark:      var(--blue-dark);
+$blue-light:     var(--blue-light);
+$gold-deep:      var(--gold-deep);
+$gold-dark:      var(--gold-dark);
+$gold-light:     var(--gold-light);
+
+.content {
+    display: none;
+}

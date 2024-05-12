@@ -1,0 +1,38 @@
+@use "../settings/var" as colors;
+@use "../settings/breakpoints" as breakpoints;
+@use "../utils/mixins" as mixins;
+
+
+.scrolling {
+    width:  40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 3.5rem;
+    right: 1.5rem;
+    background-color: colors.$blue-primary;
+    color: #FFF;
+    padding: 1rem;
+    font-size: 1.5rem;
+    z-index: 4;
+    border-radius: 4px;
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: background ease-in-out .25s,  ease-in-out .25s;
+
+    @media (min-width: 768px) {
+        right: 3.5rem;
+    }
+
+    &:hover {
+        background-color: colors.$gold-dark;
+    }
+
+    &.show {
+        opacity: 1;
+    }
+}
