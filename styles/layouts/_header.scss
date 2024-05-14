@@ -26,9 +26,12 @@
 
     &__cta {
 
-        & img {
-            width: 100px;
-            height: auto;
+        display: flex;
+        gap: 1rem;
+
+        &-link {
+            font-size: 1.25em;
+            color: colors.$gold-deep;
         }
     }
 }

@@ -7,9 +7,15 @@
 
     &__wrapper {
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 1rem;
+    }
+
+    &-link {
+        color: colors.$gold-light;
     }
 
     &-text {

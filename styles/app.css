@@ -60,6 +60,10 @@ section:not(:first-child) {
   margin: 5rem 0;
 }
 
+section:not(.footer__wrapper):not(.header__wrapper):last-child {
+  margin: 5rem 0 0 0;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../assets/fonts/icomoon.eot");
@@ -1210,6 +1214,15 @@ section:not(:first-child) {
   content: "\ea19";
 }
 
+.icon-soccer:before {
+  content: "\ea1a";
+  color: #b7832f;
+}
+
+.icon-tik-tok:before {
+  content: "\ea1b";
+}
+
 :root {
   --blue-primary: #07305D;
   --blue-dark: #142F5A;
@@ -1243,9 +1256,13 @@ section:not(:first-child) {
 .header__logo {
   width: 50px;
 }
-.header__cta img {
-  width: 100px;
-  height: auto;
+.header__cta {
+  display: flex;
+  gap: 1rem;
+}
+.header__cta-link {
+  font-size: 1.25em;
+  color: var(--gold-deep);
 }
 
 :root {
@@ -1268,9 +1285,14 @@ section:not(:first-child) {
 }
 .footer__wrapper {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 1rem;
+}
+.footer-link {
+  color: var(--gold-light);
 }
 .footer-text {
   color: #FFF;
@@ -1410,9 +1432,12 @@ section:not(:first-child) {
 
 .subscribe {
   width: 100%;
-  height: 325px;
+  min-height: 325px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   position: relative;
-  padding: 1rem;
+  padding: 8rem 1rem;
 }
 .subscribe::after {
   content: "";
@@ -1458,13 +1483,14 @@ section:not(:first-child) {
 
 .contact {
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 .contact__wrapper {
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 1rem;
 }
 .contact-title {
   font-size: 1.5em;
@@ -1474,7 +1500,8 @@ section:not(:first-child) {
 @media (min-width: 768px) {
   .contact-title {
     max-width: 80ch;
-    font-size: 2em;
+    margin-right: auto;
+    color: #FFF;
   }
 }
 .contact__form {
@@ -1484,6 +1511,53 @@ section:not(:first-child) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+:root {
+  --blue-primary: #07305D;
+  --blue-dark: #142F5A;
+  --blue-light: #17315B;
+  --gold-deep: #C19336;
+  --gold-dark: #B7832F;
+  --gold-light: #D1AC53;
+}
+
+.content {
+  display: none;
+}
+
+.politic {
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+@media (min-width: 1280px) {
+  .politic {
+    padding: 0;
+  }
+}
+.politic h2 {
+  font-size: 2.5em;
+  color: var(--blue-primary);
+}
+.politic p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.politic h3, .politic h4 {
+  font-size: 1.5em;
+  color: var(--blue-primary);
+}
+.politic strong {
+  color: var(--gold-dark);
+}
+.politic-list {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -1672,12 +1746,12 @@ section:not(:first-child) {
   background-color: var(--gold-deep);
 }
 
-h1, h2, h3, h4, h5, h6, button {
+h1, h2, h3, h4, h5, h6, button, a {
   font-family: "Anton", sans-serif;
   font-weight: 400;
 }
 
-p, span, a {
+p, span {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }/*# sourceMappingURL=app.css.map */

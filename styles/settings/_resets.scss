@@ -44,3 +44,7 @@ button {
 section:not(:first-child) {
     margin: 5rem 0;
 }
+
+section:not(.footer__wrapper):not(.header__wrapper):last-child {
+    margin: 5rem 0 0 0;
+}
