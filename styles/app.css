@@ -1443,7 +1443,7 @@ section:not(.footer__wrapper):not(.header__wrapper):last-child {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4823529412);
+  background-color: rgba(0, 0, 0, 0.7019607843);
   position: absolute;
   top: 0;
   left: 0;
@@ -1460,7 +1460,7 @@ section:not(.footer__wrapper):not(.header__wrapper):last-child {
      object-fit: cover;
 }
 .subscribe__wrapper {
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -1487,22 +1487,16 @@ section:not(.footer__wrapper):not(.header__wrapper):last-child {
   z-index: 3;
 }
 .contact__wrapper {
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 .contact-title {
   font-size: 1.5em;
-  text-align: center;
-  color: var(--blue-primary);
-}
-@media (min-width: 768px) {
-  .contact-title {
-    max-width: 80ch;
-    margin-right: auto;
-    color: #FFF;
-  }
+  text-align: left;
+  margin-right: auto;
+  color: #FFF;
 }
 .contact__form {
   width: 100%;
@@ -1698,6 +1692,17 @@ section:not(.footer__wrapper):not(.header__wrapper):last-child {
   display: none;
 }
 
+.form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.form-control label {
+  font-size: 1rem;
+  line-height: 16px;
+  color: white;
+}
 .form-input {
   --form-border-color: #e0e0e0;
   width: 100%;
@@ -1730,6 +1735,29 @@ section:not(.footer__wrapper):not(.header__wrapper):last-child {
 .form-textarea:focus, .form-textarea:focus-within, .form-textarea:focus-visible {
   outline-color: var(--blue-primary);
 }
+.form-checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.form-checkbox input[type=checkbox] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--gold-dark);
+}
+.form-checkbox label {
+  color: white;
+}
+.form-checkbox label a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--gold-dark);
+  text-decoration: underline;
+}
+.form-checkbox label a:hover {
+  color: var(--gold-light);
+}
 .form-button {
   width: 100%;
   height: 48px;
@@ -1751,7 +1779,7 @@ h1, h2, h3, h4, h5, h6, button, a {
   font-weight: 400;
 }
 
-p, span {
+p, span, label {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }/*# sourceMappingURL=app.css.map */

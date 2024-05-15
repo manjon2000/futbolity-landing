@@ -143,7 +143,7 @@
         content: '';
         width: 100%;
         height: 100%;
-        background-color: #0000007b;
+        background-color: #000000b3;
         position: absolute;
         top: 0;
         left: 0;
@@ -161,7 +161,7 @@
     }
 
     &__wrapper {
-        max-width: 400px;
+        max-width: 500px;
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -191,7 +191,7 @@
     z-index: 3;
 
     &__wrapper {
-        max-width: 400px;
+        max-width: 500px;
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -199,14 +199,9 @@
 
     &-title {
         font-size: 1.5em;
-        text-align: center;
-        color: colors.$blue-primary;
-
-        @media (min-width: 768px) {
-            max-width: 80ch;
-            margin-right: auto;
-            color: #FFF;
-        }
+        text-align: left;
+        margin-right: auto;
+        color: #FFF;
     }
 
     &__form {

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Futbolity, nuestra misión es reconectar a las personas con su pasión por le fútbol.">
+    <meta name="description"
+        content="Futbolity, nuestra misión es reconectar a las personas con su pasión por le fútbol.">
     <title>Futbolity Landing</title>
     <link rel="stylesheet" href="./styles/app.css">
 </head>
+
 <body>
 
     <div class="loading" aria-label="Cargando la web">
@@ -37,15 +40,20 @@
                 </article>
             </section>
         </header>
-    
+
         <main role="main" aria-label="Contenido">
 
             <section class="hero" aria-label="Contenido" style="background-image: url(./assets/bg-hero.webp);">
                 <div class="hero__wrapper">
-                    <h1 class="hero__title">En Futbolity, nuestra misión es reconectar a las personas con su pasión por el fútbol.</h1>
-                    <p class="hero__text">Próximamente en junio. Diseñada por apasionados para apasionados, nuestra plataforma no solo simplifica la organización de partidos, sino que también ofrece una experiencia integral para todos los amantes del deporte. Desde la planificación hasta la ejecución.</p>
+                    <h1 class="hero__title">En Futbolity, nuestra misión es reconectar a las personas con su pasión por
+                        el fútbol.</h1>
+                    <p class="hero__text">Próximamente en junio. Diseñada por apasionados para apasionados, nuestra
+                        plataforma no solo simplifica la organización de partidos, sino que también ofrece una
+                        experiencia integral para todos los amantes del deporte. Desde la planificación hasta la
+                        ejecución.</p>
                     <div class="hero__cta">
-                        <a href="#contactanos" class="form-button" type="submit" style="width: fit-content; display: flex; align-items: center; justify-content: center; padding: 0 1rem;">Avisadme</a>
+                        <a href="#contactanos" class="form-button" type="submit"
+                            style="width: fit-content; display: flex; align-items: center; justify-content: center; padding: 0 1rem;">Avisadme</a>
                         <!-- <a href="https://play.google.com/store/games?hl=es&gl=US" target="_blank">
                             <img src="./assets/google-play.svg" alt="Descargar en la playstore">
                         </a>
@@ -55,7 +63,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="services">
                 <article class="services__wrapper">
                     <h2 class="services__title">
@@ -71,7 +79,8 @@
                             </div>
                             <div class="services__card__cell-content">
                                 <h3 class="services__card-title">Crea tu equipo</h3>
-                                <p class="services__card-text">Crea tu propio equipo de fútbol, personalízalo e invita a tus amigos.</p>
+                                <p class="services__card-text">Crea tu propio equipo de fútbol, personalízalo e invita a
+                                    tus amigos.</p>
                             </div>
                         </div>
                         <div class="services__card">
@@ -82,7 +91,8 @@
                             </div>
                             <div class="services__card__cell-content">
                                 <h3 class="services__card-title">Organiza partidos</h3>
-                                <p class="services__card-text">Busca equipos contra los que jugar cerca de ti y organiza dónde y cuándo..</p>
+                                <p class="services__card-text">Busca equipos contra los que jugar cerca de ti y organiza
+                                    dónde y cuándo..</p>
                             </div>
                         </div>
                         <div class="services__card">
@@ -99,29 +109,45 @@
                     </div>
                 </article>
             </section>
-           
-            <section id="contactanos" class="subscribe" aria-label="Suscribete para recibir una notificacion cuando la aplicacion este disponible">
-                <img class="subscribe__image" src="./assets/bg-hero.webp" alt="">
+
+            <section id="contactanos" class="subscribe"
+                aria-label="Suscribete para recibir una notificacion cuando la aplicacion este disponible">
+                <img class="subscribe__image" src="./assets/bg-hero.webp" alt="Fondo de la seccion de formularios">
+                <article class="subscribe__wrapper">
+                    <form action="POST" class="subscribe__form">
+                        <h3 class="subscribe__form-title">Próximamente en junio. Introduce tu correo para ser el primero
+                            en enterarte.</h3>
+                        <input class="form-input" type="email" name="email" placeholder="example@domain.es" />
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="accepted_politics" id="accepted_politics">
+                            <label for="accepted_politics">
+                                <span>He leído y acepto las <a href="#">Condiciones de privacidad</a></span>
+                            </label>
+                        </div>
+                        <button class="form-button" type="submit">Subscribirse</button>
+                    </form>
+                </article>
                 <article class="contact">
                     <article class="contact__wrapper">
                         <form action="POST" class="contact__form">
                             <h3 class="contact-title">Contáctanos</h3>
-                            <input class="form-input"  type="text" name="name" placeholder="Nombre" />
-                            <input class="form-input"  type="email" name="email" placeholder="example@domain.es" />
-                            <textarea class="form-textarea" name="message" placeholder="Mensaje"></textarea>
+                            <div class="form-control">
+                                <label for="name">Nombre</label>
+                                <input class="form-input" type="text" name="name" id="name" placeholder="Nombre" />
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Correo electrónico</label>
+                                <input class="form-input" type="email" name="email" id="email" placeholder="example@domain.es" />
+                            </div>
+                            <div class="form-control">
+                                <label for="message">Mensaje</label>
+                                <textarea class="form-textarea" name="message" id="message" placeholder="Mensaje"></textarea>
+                            </div>
                             <button class="form-button" type="submit">Contáctanos</button>
                         </form>
                     </article>
                 </article>
-                <article class="subscribe__wrapper">
-                    <form action="POST" class="subscribe__form">
-                        <h3 class="subscribe__form-title">Próximamente en junio. Introduce tu correo para ser el primero en enterarte.</h3>
-                        <input class="form-input"  type="email" name="email" placeholder="example@domain.es" />
-                        <button class="form-button" type="submit">Subscribirse</button>
-                    </form>
-                </article>
             </section>
- 
         </main>
     </div>
 
@@ -133,29 +159,63 @@
             </p>
         </section>
     </footer>
-
-
+    
     <script>
-        window.addEventListener("load", function() {
+        window.addEventListener("load", function () {
             setTimeout(() => {
                 let content = document.querySelector('.content');
                 let loader = document.querySelector('.loading');
                 loader.style.display = "none";
                 content.style.display = "block";
+
+                if (window.location.hash && window.location.hash !== '') {
+                    if (window.location.hash.match(/#.*?(?=\?|$)/)[0]) {
+                        const identity = window.location.hash.match(/#.*?(?=\?|$)/)[0];
+                        let contentInDOM = document.querySelector(identity);
+
+                        if (contentInDOM) {
+                            window.scrollTo(0, contentInDOM.getBoundingClientRect().top)
+                        }
+
+                        if (window.location.href.match(/message=([^&]+)/)[1]) {
+                            switch (window.location.href.match(/message=([^&]+)/)[1]) {
+                                case 'success':
+                                    Swal.fire({
+                                        title: 'Formulario enviado!',
+                                        text: 'Se ha enviado correctamente el formulario',
+                                        icon: 'success',
+                                        confirmButtonText: 'Cerrar'
+                                    })
+                                    break;
+                                case 'error':
+                                    Swal.fire({
+                                        title: 'Upp Error!',
+                                        text: 'No se ha podido enviar el formulario',
+                                        icon: 'error',
+                                        confirmButtonText: 'Cerrar'
+                                    })
+                                    break;
+                            }
+                        }
+                    }
+                }
             }, 1500)
+
+
+
 
             let scrolling = document.querySelector('.scrolling');
 
             scrolling.addEventListener('click', () => {
-                if(window.scrollY > 0 && window.scrollY > 300) {
+                if (window.scrollY > 0 && window.scrollY > 300) {
                     window.scrollTo(0, 0)
                 }
             })
 
             window.addEventListener('scroll', () => {
-                if(window.scrollY > 300) {
+                if (window.scrollY > 300) {
                     scrolling.classList.add('show');
-                }else {
+                } else {
                     scrolling.classList.remove('show');
                 }
             })
@@ -163,4 +223,5 @@
         });
     </script>
 </body>
+
 </html>
