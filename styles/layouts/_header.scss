@@ -21,13 +21,24 @@
     }
 
     &__logo {
-        width: 50px;
+        font-size: .75em;
+        color: white;
+
+        @media (min-width: 475px) {
+            font-size: 1em;
+        }
     }
 
     &__cta {
 
         display: flex;
+        align-items: center;
         gap: 1rem;
+
+        &-email {
+            color: white;
+            font-size: .75em;
+        }
 
         &-link {
             font-size: 1.25em;

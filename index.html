@@ -23,8 +23,9 @@
         </div>
         <header class="header" aria-label="Navegacion">
             <section class="header__wrapper">
-                <img class="header__logo" src="./assets/logo.webp" alt="Logo Futbolity" />
+                <h1 class="header__logo">Futbolity</h1>
                 <article class="header__cta" aria-label="Enlaces para descargar la aplicacion">
+                    <p class="header__cta-email">support@futbolity.es</p>
                     <a href="#">
                         <em class="icon icon-instagram header__cta-link"></em>
                     </a>
@@ -68,41 +69,29 @@
                 <article class="services__wrapper">
                     <h2 class="services__title">
                         Para los que se emocionan, aman y sienten pasión por el fútbol real.
-                        Futbolistas, familiares, aficionados, entrenadores, clubes, árbitros.
+                        Futbolistas, aficionados, entrenadores, clubes, árbitros.
                     </h2>
                     <div class="services__container">
                         <div class="services__card">
-                            <div class="services__card__cell-image">
-                                <div class="services__card__icon">
-                                    <em class="icon-search"></em>
-                                </div>
-                            </div>
-                            <div class="services__card__cell-content">
+                            <img class="services__card-img" src="./assets/team.jpg" alt="Crea tu equipo" />
+                            <div class="services__card__content">
                                 <h3 class="services__card-title">Crea tu equipo</h3>
                                 <p class="services__card-text">Crea tu propio equipo de fútbol, personalízalo e invita a
                                     tus amigos.</p>
                             </div>
                         </div>
                         <div class="services__card">
-                            <div class="services__card__cell-image">
-                                <div class="services__card__icon">
-                                    <em class="icon icon-globe"></em>
-                                </div>
-                            </div>
-                            <div class="services__card__cell-content">
+                            <img class="services__card-img" src="./assets/tournament.jpg" alt="Crea tu equipo" />
+                            <div class="services__card__content">
                                 <h3 class="services__card-title">Organiza partidos</h3>
                                 <p class="services__card-text">Busca equipos contra los que jugar cerca de ti y organiza
-                                    dónde y cuándo..</p>
+                                    dónde y cuándo.</p>
                             </div>
                         </div>
                         <div class="services__card">
-                            <div class="services__card__cell-image">
-                                <div class="services__card__icon">
-                                    <em class="icon icon-soccer" style="font-size: 1.25em;"></em>
-                                </div>
-                            </div>
-                            <div class="services__card__cell-content">
-                                <h3 class="services__card-title">Juega.</h3>
+                            <img class="services__card-img" src="./assets/search.jpg" alt="Crea tu equipo" />
+                            <div class="services__card__content">
+                                <h3 class="services__card-title">Juega</h3>
                                 <p class="services__card-text">Eres tan bueno como piensas? Juega y demuéstralo.</p>
                             </div>
                         </div>
@@ -118,30 +107,14 @@
                         <h3 class="subscribe__form-title">Próximamente en junio. Introduce tu correo para ser el primero
                             en enterarte.</h3>
                         <input class="form-input" type="email" name="email" placeholder="example@domain.es" />
-                        <div class="form-checkbox">
+                        <!-- <div class="form-checkbox">
                             <input type="checkbox" name="accepted_politics" id="accepted_politics">
                             <label for="accepted_politics">
                                 <span>He leído y acepto las <a href="#">Condiciones de privacidad</a></span>
                             </label>
-                        </div>
+                        </div> -->
                         <button class="form-button" type="submit">Subscribirse</button>
                     </form>
-                </article>
-                <article class="contact">
-                    <article class="contact__wrapper">
-                        <form action="POST" class="contact__form">
-                            <h3 class="contact-title">Contáctanos</h3>
-                            <div class="form-control">
-                                <label for="name">Nombre</label>
-                                <input class="form-input" type="text" name="name" id="name" placeholder="Nombre" />
-                            </div>
-                            <div class="form-control">
-                                <label for="email">Correo electrónico</label>
-                                <input class="form-input" type="email" name="email" id="email" placeholder="example@domain.es" />
-                            </div>
-                            <button class="form-button" type="submit">Contáctanos</button>
-                        </form>
-                    </article>
                 </article>
             </section>
         </main>
