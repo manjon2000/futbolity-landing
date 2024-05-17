@@ -1242,8 +1242,8 @@ section:not(.footer__wrapper):not(.header__wrapper):last-child {
   height: max-content;
   position: sticky;
   top: 0;
-  padding: 1rem;
-  background-color: var(--blue-dark);
+  padding: 2rem 1rem;
+  background-color: #000;
   z-index: 5;
 }
 .header__wrapper {
@@ -1292,7 +1292,7 @@ section:not(.footer__wrapper):not(.header__wrapper):last-child {
 .footer {
   width: 100%;
   padding: 1rem;
-  background-color: var(--blue-primary);
+  background-color: #000;
 }
 .footer__wrapper {
   display: flex;
