@@ -21,11 +21,11 @@
     }
 
     &__logo {
-        font-size: .75em;
+        font-size: 1.25rem;
         color: white;
 
         @media (min-width: 475px) {
-            font-size: 1em;
+            font-size: 2em;
         }
     }
 
